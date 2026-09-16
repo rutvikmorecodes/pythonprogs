@@ -14,6 +14,7 @@ Take the user's name and age as input. Display a message like: Hello Rutik, you 
 Convert a string "100" into an integer and add 50 to it.
 
 Swap two variables without using a third variable. """
+
 name = "rutvik kartar more" 
 age = 21
 #percentage  
@@ -54,6 +55,7 @@ d = e
 e = temp
 
 print(f"d ={d} and e= {e}")
+
 
 
 
