@@ -10,6 +10,11 @@ for i in range(1,50):
        print(i)
 
 #Print the multiplication table of a number entered by the user.
+num = int(input("enter the number for table "))
+for i in range(1,11):
+    table = num * i
+    print(table)
+
 
 #Calculate the sum of numbers from 1 to n using a loop.
 
