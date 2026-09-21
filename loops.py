@@ -82,8 +82,24 @@ for i in range(1,100):
 
 
 #Print the Fibonacci series for n terms.
+nn = int(input("enter number for fibonacci of n ,  "))
+a = 0
+b = 1
 
-#Print this pattern: triangle right angle 
+for i in range(nn+1):
+    print(a)
+    a,b = b,a+b
+
+
+
+#Print this pattern:  right angle triangle
+
+for i in range(1,5):
+    for j in range(i):
+        print("*",end = "")
+    print()
+        
+        
 #Print this pattern: triangle right angle numbers
 #  
 """
