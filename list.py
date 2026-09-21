@@ -95,7 +95,7 @@ for i in  range(len(num1)):
 if count == 0:
     print("not an single comman  element in lists ")
 marks = []
-marks = list(map( int, input("enter marks for subjects ").split()))
+marks = 34
 print(marks)
 tot = sum(marks)
 print(tot)

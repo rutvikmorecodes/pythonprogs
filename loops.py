@@ -31,21 +31,76 @@ for i in range(1,n + 1):
 
 #Calculate the factorial of a number using a while loop.
 
+f = int(input("Enter a number: "))
+
+fa = 1
+i = 1
+
+while i <= f:
+    fa = fa * i
+    i += 1
+
+print(fa)
 #Reverse a number using a loop. Example: 1234 → 4321.
+num1 = int(input("enter number for reverse : "))
+rev = 0
+while 0 < num1:
+    dig = num1 % 10
+    rev = rev * 10 + dig
+    num1 = num1 // 10
+print(rev)    
+
 
 #Count the number of digits in an integer.
-
+num2 = int(input("enter the number : "))
+count = 0
+for i in str(num2):
+    count += 1
+print(count)
 #Check whether a number is prime.
-
+pr = int(input("enter a number to check its prime or not : "))
+if pr < 2:
+    print(f"{pr} : numbers is not prime ")
+else:
+    for i in range(2,pr):
+        if pr % i == 0:
+            print(f"{pr} : number is not prime")
+            
+            break   
+        
+    else:
+            print(f"{pr} number is prime ")    
+             
 #Print all prime numbers between 1 and 100.
+for i in range(1,100):
+    for j in range(1,101):
+        if j % i == 0:
+            print("number is not prime ")
+        break
+    else:
+        print("number is prime ")    
+
+
 #Print the Fibonacci series for n terms.
 
 #Print this pattern: triangle right angle 
-#Print this pattern: triangle right angle numbers 
-"""1 
+#Print this pattern: triangle right angle numbers
+#  
+"""
+1 
 12
 123"""
+for i in range(1,4):
+    for j in range(1,i+1):
+        print(j, end = "")
+    print(" ")    
 #Find the sum of all elements in a list using a loop, without using sum().
+li = list(map(int,input("enter number for list use space instend of , : ").split()))
+sum1 = 0
+
+for i in li:
+    sum1 = sum1 + i
+print(sum1, ":  is the sum of li list")    
 
 #find the maximum element in a list without using max().
-
+print(max(li)," : is max element or highest element of li list")
