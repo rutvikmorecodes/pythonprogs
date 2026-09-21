@@ -9,8 +9,22 @@ def greet1(name):
 print(greet1("rutik"))
 
 # 3. Create a function that takes two numbers and returns their sum.
+def cal():
+   
+    
+   a = int(input("enter 1st number : "))
+   b = int(input("enter 2st number : "))
+   print(f"{a+b} : is the sum of number {a} and  {b} ")
+cal()   
+    # 4. Create a function that checks whether a number is even or odd.
+def ckN():
+    num = int(input("enter number for check number is even or odd : "))
 
-# 4. Create a function that checks whether a number is even or odd.
+    if num % 2 == 0:
+        print(f"number {num} is even ")
+    else:
+        print(f"number {num} is odd ")
+ckN()       
 
 # 5. Create a function that returns the factorial of a number.
 
