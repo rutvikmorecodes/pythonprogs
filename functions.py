@@ -27,6 +27,15 @@ def ckN():
 ckN()       
 
 # 5. Create a function that returns the factorial of a number.
+def fac():
+    fc =1
+    nf = int(input("enter a number for factorial : "))
+    for i in range(1,nf+1):
+        fc = fc * i
+    
+    print(f"{fc} is factorial of num {nf}")
+
+fac()
 
 # 6. Create a function that checks whether a number is prime.
 
