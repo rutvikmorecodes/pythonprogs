@@ -38,11 +38,48 @@ def fac():
 fac()
 
 # 6. Create a function that checks whether a number is prime.
+def prime():
+    pr = int(input("enter number to check num prime of not : "))
+                   
+    if pr < 2:
+        print(f"number {pr} is not prime")
+    else:
+        for i in range(2,pr):
+            if pr % i == 0:
+                print(f"number {pr} is not prime")
+                break
+        else:
+            print(f"{pr} number is prime ")        
+prime()
 
 # 7. Create a function that takes a list and returns its largest element without using `max()`.
+li = list(map(int,input("enter numbers for list  ").split()) )
+large = li[0]
+def larg(li,large):
+    
+    
+    for i in li:
+        if i > large:
+            large = i
+    return large
+        
+print(f"{larg(li,large)} : is largest element of li list")
+
+
+larg(li,large)
 
 # 8. Create a function that counts vowels in a string.
+def cnt():
+    s = input("enter a string for a count vowels or  consonants ")
+    count = 0
+    for i in s:
+        if i in "aieou":
+            print(i)
+            count += 1
+        
+    print(f"there are {count} vowels in cnt string")                
 
+cnt()
 # 9. Create a function with a default parameter for the country, such as `country="India"`.
 
 # 10. Create a function that accepts any number of arguments using `*args` and returns their sum.
