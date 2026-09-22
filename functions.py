@@ -81,12 +81,30 @@ def cnt():
 
 cnt()
 # 9. Create a function with a default parameter for the country, such as `country="India"`.
+def country(name,country1="india"):
+    print(f"{name} loves {country1}")
+country("rutik")    
+
 
 # 10. Create a function that accepts any number of arguments using `*args` and returns their sum.
+def sum(*a):
+    sum = 0
+    for i in a:
+        sum += i
+    return sum
+print(sum(2, 3, 5))    
+
+
 
 # 11. Create a function that accepts keyword arguments using `**kwargs` and prints them.
+def KWA(**kwargs):
+    print(kwargs)
+KWA(name="rutik", age= 30, cls="bbaca")  
+  
+
 
 # 12. Create a recursive function to calculate the factorial of a number.
+
 
 # 13. Create a lambda function that squares a number.
 
