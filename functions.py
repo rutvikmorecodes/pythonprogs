@@ -104,10 +104,29 @@ KWA(name="rutik", age= 30, cls="bbaca")
 
 
 # 12. Create a recursive function to calculate the factorial of a number.
+def factorial(f):
+    if f == 0 or f == 1:
+        return 1
+    return f * factorial(f-1)
+print(f"factorial of is  {factorial(5)}")
 
+factorial(5)
 
 # 13. Create a lambda function that squares a number.
+x = int(input("enter number for square : "))
+square = lambda x: x * x
+print(square(x))
+square(2)
+
 
 # 14. Use `map()` with a lambda function to double every number in a list.
+li1 = list(map(int,input("enter the number for list : ").split()))
+
+double = list(map(lambda x : x * 2,li1))
+print(double)
+
+
 
 # 15. Use `filter()` with a lambda function to get only even numbers from a list.
+even = list(filter(lambda x: x % 2 == 0,li1))
+print(even)
